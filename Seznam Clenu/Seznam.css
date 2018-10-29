@@ -1,4 +1,5 @@
-﻿.members-1998pB .member-3W1lQa .status-oxiHuE {
+/*Zvětšování-Zmenšování*/
+.members-1998pB .member-3W1lQa .status-oxiHuE {
 	transition: all 150ms ease;
     will-change: border-color, width, background, height, padding;
 }
@@ -30,3 +31,31 @@
 .members-1998pB .member-3W1lQa:hover .status-oxiHuE.typing-1KJk_j {background-color: rgba(0, 0, 0, 0.4) !important;}
 .members-1998pB .member-3W1lQa.popout-open .status-oxiHuE.typing-1KJk_j .inner-1gJC7_,
 .members-1998pB .member-3W1lQa:hover .status-oxiHuE.typing-1KJk_j .inner-1gJC7_ {left: 1px !important;top: 1px !important;}
+
+/*čára mezi rolemi v seznamu členů a v DMs*/
+.members-1998pB .membersGroup-v9BXpm, .private-channels header {
+	text-align: center;
+	overflow: visible;
+	margin-bottom: 10px;
+}
+
+.members-1998pB .membersGroup-v9BXpm::after, .private-channels header::after {
+	content: "";
+	display: block;
+	height: 1px;
+	width: 100%;
+	border-bottom: 2px solid white;
+}
+.private-channels header::after {padding-bottom: 10px;}
+
+/* čára v seznamu místnosti*/
+.channels-Ie2l6A .wrapperDefault-10Jfvz, .channels-Ie2l6A .wrapperHovered-28fu1D {
+	padding-top: 28px;
+	padding-right: 8px;
+	padding-left: 18px;
+	padding: 0 0 8px 0;
+	height: auto;
+	margin: 28px 8px 4px 18px;
+	border-bottom: 2px solid white;
+}
+.channels-Ie2l6A .nameDefault-2DI02H, .channels-Ie2l6A .nameHovered-1gxhWH {text-align: center;}
